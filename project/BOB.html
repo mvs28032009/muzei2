@@ -92,6 +92,67 @@
                 </i></p>
             </div>
         </div>
+
+        <!-- Галерея фотографий для ВОВ -->
+        <div class="fade-in">
+            <h2 style="text-align: center; margin-top: 50px; color: #1e3c72;">Герои Великой Отечественной Войны</h2>
+            <div class="photo-gallery">
+
+                <div class="photo-item" onclick="openModal('img/BOB/Арефьевы 9б и 4в/1.png', 'Конев Иван Андреевич')">
+                    <img src="img/BOB/Арефьевы 9б и 4в/1.png" alt="Конев И. А.">
+                    <div class="photo-caption"><strong>Конев И. А.</strong></div>
+                </div>
+
+                <div class="photo-item" onclick="openBalandinModal()">
+                    <img src="img/BOB/Баландин 8г/1.png" alt="Баландин А. И.">
+                    <div class="photo-caption"><strong>Баландин А. И.</strong></div>
+                </div>
+
+                <div class="photo-item" onclick="openModal('img/BOB/Боброва 8б/1.png', 'Овчинников Леонид Игнатьевич')">
+                    <img src="img/BOB/Боброва 8б/1.png" alt="Овчинников Л. И.">
+                    <div class="photo-caption"><strong>Овчинников Л. И.</strong></div>
+                </div>
+
+                <div class="photo-item" onclick="openModal('img/BOB/герой4.jpg', 'Кузнецов Николай Петрович')">
+                    <img src="img/BOB/герой4.jpg" alt="Кузнецов Н. П.">
+                    <div class="photo-caption"><strong>Кузнецов Н. П.</strong></div>
+                </div>
+
+                <div class="photo-item" onclick="openModal('img/BOB/герой5.jpg', 'Смирнова Анна Федоровна')">
+                    <img src="img/BOB/герой5.jpg" alt="Смирнова А. Ф.">
+                    <div class="photo-caption"><strong>Смирнова А. Ф.</strong></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Основное модальное окно для ВОВ -->
+<div id="imageModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-image-container">
+            <img id="modalImage" class="modal-image" src="" alt="">
+        </div>
+        <div class="modal-text">
+            <h3 id="modalTitle"></h3>
+            <p id="modalDescription">
+                <!-- Описание будет заполняться динамически -->
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Специальное модальное окно для героев с несколькими фото -->
+<div id="specialModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeSpecialModal()">&times;</span>
+        <div class="modal-text">
+            <h3 id="specialModalTitle"></h3>
+            <div id="specialModalGallery"></div>
+            <div id="specialModalDescription"></div>
+        </div>
     </div>
 </div>
 
@@ -99,6 +160,9 @@
     © 2025 Сайт принадлежит МОУ СОШ №18. Все права защищены.
 </footer>
 
+<script src="modalmenuCore.js"></script>
+<script src="modalDescriptions.js"></script>
 <script src = "menu.js"></script>
+
 </body>
 </html>
