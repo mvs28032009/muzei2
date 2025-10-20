@@ -28,7 +28,7 @@
                         <a href="organization(Пустой).html">Организации школы</a>
                         <ul class="submenu">
                             <li><a href="patriot(Пустой).html">Патриотика</a></li>
-                            <li><a href="ecology(Пустой).html">Экология</a></li>
+                            
                             <li><a href="dobro(Пустой).html">Волонтерство</a></li>
                         </ul>
                     </li>
@@ -38,7 +38,7 @@
                         <ul class="submenu">
                             <li><a href="auto.html">Автошкола</a></li>
                             <li><a href="day_zdorovia(Пустой).html">День здоровья</a></li>
-                            <li><a href="subjects(Пустой).html">Предметы недели</a></li>
+                            
                             <li><a href="veterans(Пустой).html">Встречи с ветеранами</a></li>
                         </ul>
                     </li>
@@ -53,7 +53,6 @@
 
                 </ul>
             </li>
-            <li><a href="contacts.html">Предложи свою историю</a></li>
         </ul>
     </div>
         
@@ -67,7 +66,7 @@
             
             <div style="position: relative;">
                 <div style="float: left; margin: 0 30px 20px 0; width: 300px; text-align: center;">
-                    <img src="img/photo_2025-10-18_19-44-43.jpg" alt="ВМЕСТЕСИЛЬНЕЕ" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                    <img src="img/CBO/photo_2025-10-18_19-44-43.jpg" alt="ВМЕСТЕСИЛЬНЕЕ" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
                     <p style="font-size: 0.9em; color: #666; margin-top: 10px; font-style: normal;">#ВМЕСТЕСИЛЬНЕЕ</p>
                     
                     <!-- Цитата под картинкой -->
@@ -107,29 +106,17 @@
             <!-- Галерея фотографий -->
             <div class="fade-in">
                 <div class="photo-gallery">
-                    <div class="photo-item" onclick="openModal('img/photo_2025-10-18_23-59-14.jpg', 'Ломтев Михаил Юрьевич')">
-                        <img src="img/photo_2025-10-18_23-59-14.jpg" alt="Ломтев М. Ю">
+                    <div class="photo-item" onclick="openModal('img/CBO/photo_2025-10-18_23-59-14.jpg', 'Ломтев Михаил Юрьевич')">
+                        <img src="img/CBO/photo_2025-10-18_23-59-14.jpg" alt="Ломтев М. Ю">
                         <div class="photo-caption"><strong>Ломтев М. Ю.</strong></div>
                     </div>
-                    <div class="photo-item" onclick="openModal('https://via.placeholder.com/300x200/e74c3c/ffffff?text=Фото+2', 'Первый выпуск школы (1955 год)')">
-                        <img src="https://via.placeholder.com/300x200/e74c3c/ffffff?text=Фото+2" alt="Первый выпуск">
-                        <div class="photo-caption">Первый выпуск школы</div>
+                    <div class="photo-item" onclick="openModal('img/CBO/photo_2025-10-20_19-26-07.jpg', 'Василюк Павел Сергеевич')">
+                        <img src="img/CBO/photo_2025-10-20_19-26-07.jpg" alt="Василюк П. С.">
+                        <div class="photo-caption"><strong>Василюк П. С.</strong></div>
                     </div>
-                    <div class="photo-item" onclick="openModal('https://via.placeholder.com/300x200/2ecc71/ffffff?text=Фото+3', 'Современное здание школы (построено в 1980 году)')">
-                        <img src="https://via.placeholder.com/300x200/2ecc71/ffffff?text=Фото+3" alt="Современное здание">
-                        <div class="photo-caption">Современное здание</div>
-                    </div>
-                    <div class="photo-item" onclick="openModal('https://via.placeholder.com/300x200/f39c12/ffffff?text=Фото+4', 'Школьные традиции: День знаний')">
-                        <img src="https://via.placeholder.com/300x200/f39c12/ffffff?text=Фото+4" alt="День знаний">
-                        <div class="photo-caption">День знаний</div>
-                    </div>
-                    <div class="photo-item" onclick="openModal('https://via.placeholder.com/300x200/9b59b6/ffffff?text=Фото+5', 'Школьный музей (открыт в 1995 году)')">
-                        <img src="https://via.placeholder.com/300x200/9b59b6/ffffff?text=Фото+5" alt="Школьный музей">
-                        <div class="photo-caption">Школьный музей</div>
-                    </div>
-                    <div class="photo-item" onclick="openModal('https://via.placeholder.com/300x200/34495e/ffffff?text=Фото+6', 'Спортивные достижения школы')">
-                        <img src="https://via.placeholder.com/300x200/34495e/ffffff?text=Фото+6" alt="Спортивные достижения">
-                        <div class="photo-caption">Спортивные достижения</div>
+                    <div class="photo-item" onclick="openModal('img/CBO/photo_2025-10-20_19-26-02.jpg', 'Виноградов Лев Александрович')">
+                        <img src="img/CBO/photo_2025-10-20_19-26-02.jpg" alt="Виноградов Л. А.">
+                        <div class="photo-caption"><strong>Виноградов Л. А.</strong></div>
                     </div>
                 </div>
             </div>
@@ -141,21 +128,17 @@
 <div id="imageModal" class="modal">
     <div class="modal-content">
         <span class="close" onclick="closeModal()">&times;</span>
-        <img id="modalImage" class="modal-image" src="" alt="">
+        <div class="modal-image-container">
+            <img id="modalImage" class="modal-image" src="" alt="">
+        </div>
         <div class="modal-text">
-            <h3 id="modalTitle">Ломтев Михаил Юрьевич</h3>
+            <h3 id="modalTitle"></h3>
             <p id="modalDescription">
-                <strong>Михаил Юрьевич Ломтев</strong><br><br>
-                Родился 14 сентября 1977 года в г. Котласе. Окончил 11 классов в школе № 18, после чего поступил в Котласское речное училище. По его окончании получил высшее образование заочно. Трудовую деятельность начал как индивидуальный предприниматель. Последние 25 лет работал в системе РЖД. Был составителем поездов на станции Котлас-Южный.<br><br>
-                Михаил любил свой город и свою страну. Отправиться на СВО хотел с первых дней, но останавливали жена, дети, работа. После событий в Курской области решение было принято окончательно.<br><br>
-                2 октября 2024 года Михаил уехал в Санкт-Петербург, чтобы стать бойцом войск РЖД. После учебки в Ленинградской области получил специальность наводчика в артиллерийской группе. Далее поступил в распоряжение войсковой части, расположенной в Белгородской области. Задача таких групп – уничтожать воздушные цели противника. Спустя две недели в часть пришёл запрос на добровольцев в зону проведения боевых операций на территории Украины. Михаил выступил добровольцем и уехал в город Волчанск.<br><br>
-                5 декабря 2024 года Михаил погиб при исполнении боевого задания. По нему прицельно отработал вражеский дрон «Баба-яга», снаряд повредил ноги, от большой кровопотери Михаил скончался.<br><br>
-                Посмертно Михаил получил звание «Почётный железнодорожник» и Орден Мужества.
             </p>
         </div>
     </div>
 </div>
-    
+  
 <footer>
     © 2025 Сайт принадлежит МОУ СОШ №18. Все права защищены.
 </footer>
