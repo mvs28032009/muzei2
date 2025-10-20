@@ -810,7 +810,14 @@ footer {
     }
     
     .photo-gallery {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 15px;
+        margin: 20px 0;
+    }
+    
+    .photo-item img {
+        min-height: 150px;
+        max-height: 250px;
     }
     
     .header-title {
@@ -867,4 +874,168 @@ footer {
     }
     
     .modal-text {
-        max-height: 60vh
+        max-height: 60vh;
+        padding: 10px;
+        font-size: 1em;
+    }
+    
+    .modal-text h3 {
+        font-size: 1.5em;
+    }
+    
+    /* Адаптивность для элементов управления zoom на мобильных */
+    .zoom-controls-container {
+        padding: 8px 12px;
+    }
+    
+    .zoom-btn {
+        width: 36px;
+        height: 36px;
+        font-size: 16px;
+    }
+    
+    .reset-zoom-btn {
+        width: 36px;
+        height: 36px;
+        font-size: 14px;
+    }
+    
+    .zoom-indicator {
+        font-size: 11px;
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mobile-menu-toggle {
+        width: 45px;
+        height: 45px;
+        top: 15px;
+        left: 15px;
+    }
+    
+    .mobile-menu-toggle.active span:nth-child(1) {
+        transform: translateY(5px) rotate(45deg);
+    }
+    
+    .mobile-menu-toggle.active span:nth-child(3) {
+        transform: translateY(-5px) rotate(-45deg);
+    }
+    
+    .sidebar {
+        width: 260px;
+        padding: 15px 10px;
+    }
+
+    .main-content {
+        padding: 15px;
+    }
+
+    .photo-gallery {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    
+    .photo-item img {
+        min-height: 180px;
+        max-height: 220px;
+    }
+
+    .modal-content {
+        margin: 1% auto;
+        width: 98%;
+        padding: 15px;
+    }
+    
+    .modal-text {
+        font-size: 0.95em;
+        line-height: 1.7;
+    }
+    
+    .modal-text h3 {
+        font-size: 1.3em;
+    }
+    
+    /* Адаптивность для элементов управления zoom на очень маленьких экранах */
+    .zoom-controls-container {
+        padding: 6px 10px;
+    }
+    
+    .zoom-btn {
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+    }
+    
+    .reset-zoom-btn {
+        width: 32px;
+        height: 32px;
+        font-size: 12px;
+    }
+    
+    .zoom-indicator {
+        font-size: 10px;
+        padding: 4px 8px;
+    }
+    
+    .modal-image-container {
+        height: 350px;
+    }
+    
+    .modal-image {
+        max-height: 330px;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    .modal-content {
+        width: 98%;
+        max-width: 900px;
+        gap: 25px;
+        padding: 25px;
+    }
+    
+    .modal-image-container {
+        max-width: 350px;
+        width: 45%;
+    }
+    
+    .modal-image {
+        max-height: 450px;
+    }
+}
+
+@media (max-width: 768px) and (max-height: 600px) {
+    .modal-image-container {
+        height: 300px;
+    }
+    
+    .modal-image {
+        max-height: 280px;
+    }
+}
+
+/* Подсказки для кнопок (только для десктопа) */
+@media (min-width: 769px) {
+    .reset-zoom-btn::after {
+        content: attr(title);
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(0, 0, 0, 0.8);
+        color: white;
+        padding: 5px 10px;
+        border-radius: 4px;
+        font-size: 12px;
+        white-space: nowrap;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+        z-index: 1000;
+    }
+
+    .reset-zoom-btn:hover::after {
+        opacity: 1;
+    }
+}
